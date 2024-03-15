@@ -14,5 +14,10 @@ public class Car {
     void Brake(){
         System.out.println("You Stepped on the Brakes");
     }
+    //Over Writing the ToString Method
+    
+    public String toString(){
+        return make +"\n"+model+"\n"+year+"\n"+color+"\n"+price;
+    }
 
 }

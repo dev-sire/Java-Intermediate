@@ -6,6 +6,7 @@ public class Human {
     double weight;
 
     //Constructor For assigning unique values
+    
     Human(String name, int age, double weight){
         this.name = name;
         this.age = age;
@@ -13,6 +14,7 @@ public class Human {
     }
 
     //Methods 
+
     void program(){
         System.out.println(this.name+" is Programming");
     }
