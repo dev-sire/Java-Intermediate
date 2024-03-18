@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
         
@@ -14,5 +16,41 @@ public class App {
         hawk.hunt();
         rabbit.flee();
 
+        // Ploymorphism: greek word for poly - "many" and morph - "forms"
+        //              The ability of an object to have more than one forms
+        
+        Car car = new Car();
+        Bicycle bicycle = new Bicycle();
+        Boat boat = new Boat();
+
+        Vehicle[] racers = {car, bicycle, boat};
+
+        for (Vehicle vehicle : racers) {
+            vehicle.go();
+        }
+
+        // Dynamic Polymorphism: Polymorphism during runtime or after compilation
+
+        Scanner scanner = new Scanner(System.in);
+        Animal animal;
+        System.out.println("What Animal do you want?");
+        System.out.print("(1: Dog) or (2: Cat)");
+        int choice = scanner.nextInt();
+
+        if(choice == 1){
+            animal = new Dog();
+            animal.speak();
+        }
+        else if(choice == 2){
+            animal = new Cat();
+            animal.speak();
+        }
+        else{
+            animal = new Animal();
+            System.out.println("The choice was invalid");
+            animal.speak();
+        }
+        
+        scanner.close();
     }
 }
