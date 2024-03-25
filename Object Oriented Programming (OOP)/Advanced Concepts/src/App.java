@@ -50,7 +50,21 @@ public class App {
             System.out.println("The choice was invalid");
             animal.speak();
         }
-        
         scanner.close();
+
+        // Trying our user defined exception 
+
+        Application s1 = new Application("Aman", "DBMS");
+        Application s2 = new Application("Subhan", "Bitcoin Trading");
+        try{
+            s1.setAge(19);
+            s2.setAge(17);
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        s2.displayDetails();
+        s1.displayDetails();   
     }
 }

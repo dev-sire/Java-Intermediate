@@ -11,7 +11,13 @@ public class App {
         // new Panels();
 
         //Buttons Window
-        new Buttons();
+        // new Buttons();
+
+        // BorderLayout Window
+        // new Border();
+
+        //FLowLayout Window
+        new Flow();
 
     }
 }
