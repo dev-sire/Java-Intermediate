@@ -29,6 +29,5 @@ public class Exceptions {
         finally{
             scanner.close();
         }
-    }
-    
+    }   
 }

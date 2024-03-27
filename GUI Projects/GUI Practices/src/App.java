@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) {
-        // Basic Window
 
+        // Basic Window
         // new BasicFrame();
 
         // Label Window
@@ -17,7 +17,15 @@ public class App {
         // new Border();
 
         //FLowLayout Window
-        new Flow();
+        // new Flow();
 
+        //Gridlayouts Window
+        // new Grids();
+
+        //Layered Panes
+        // new LayeredPanes();
+
+        // How to launch a new Frame in JSwing
+        new LaunchPage();
     }
 }
